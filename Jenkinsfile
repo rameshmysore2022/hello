@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'python3 /home/ramesh/hello/hello_world.py'
+                sh 'hello_world.sh'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'python3 hello_world.py'
+                sh 'hello_world.sh'
             }
         }
     }
